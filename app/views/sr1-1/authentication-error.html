@@ -1,10 +1,29 @@
-{% extends "layout.html" %}
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
 
 {% block pageTitle %}
-  Sorry, we cannot log you in to the service - send an SR1 - GOV.UK
+Sorry, we cannot log you in to the service - Send an SR1 - GOV.UK
 {% endblock %}
 
 {% block beforeContent %}
+<header class="govuk-header " role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="#" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <!--[if gt IE 8]><!-->
+         
+          <!--<![endif]-->
+          <!--[if IE 8]>
+          <img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+          <![endif]-->
+          <span class="govuk-header__logotype-text">
+           Send an SR1
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</header>
 {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
 {{ govukPhaseBanner({
   tag: {
@@ -17,20 +36,18 @@
 {% block content %}
 
 
-
-
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
     <h1 class="govuk-heading-l">
       Sorry, we cannot log you in to the service
-      </h1>  
+      </h1>
 
    
 
-      <p>If you’re using Edge, try changing to a different browser such as Mozilla Firefox, Google Chrome, Apple Safari or Opera. Then launch the SR1 service again.</p>
-        <p>If you still cannot log in, contact your IT department.</p>
-        <p>Alternatively, you can complete a PDF version of the SR1 form and the fee claim form which you can email back to us.</p>
+      <p>This might be due to a technical problem.</p>
+
+      <p>Sign in to the NHS Spine Portal and try launching the SR1 service again. If you’re still not able to log in, you can complete a PDF version of the SR1 form and the fee claim form which you can email back to us.</p>
 
       <p>The PDF versions do not need to be signed, but you’ll need to return them to us from a secure email address. Any email that does not come from a secure email address will be automatically deleted.</p>
 
@@ -47,6 +64,6 @@
       <p>Please include your:</p>
       <ul class="govuk-list govuk-list--bullet">
         <li>surgery/hospital/postal address</li>
-        <li>phone number</li></ul>
+        <li>phone number</li>
 <p>Do not encrypt any part of the email.</p>
 {% endblock %}
