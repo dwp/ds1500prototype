@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="1Q-11-Treatment">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Your details</h1>
+
+      <form class="form" action="1Q-13-Your-Details" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h1 class="govuk-fieldset__heading">
+                I am the patient’s:
+              </h1>
+            </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="your-role" name="your-role" type="radio" value="General Practitioner">
+                <label class="govuk-label govuk-radios__label" for="your-role">
+                  General Practitioner
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="your-role-1" name="your-role" type="radio" value="GMC registered consultant">
+                <label class="govuk-label govuk-radios__label" for="your-role-1">
+                  GMC registered consultant
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="your-role-2" name="your-role" type="radio" value="Other">
+                <label class="govuk-label govuk-radios__label" for="your-role-2">
+                  Other
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="1Q-13-Your-Details">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Your details</h1>
+
+      <form class="form" action="1Q-15-Your-Details" method="post">
+
+  <div class="govuk-form-group">
+<h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="your-trust">
+Your Trust
+</label>
+</h1>
+<div class="govuk-form-group">
+<input class="govuk-input govuk-input--width-20" id="your-trust" name="your-trust" type="text" {{ data['your-trust'] }}></div>
+
+</div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

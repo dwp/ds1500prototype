@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>SR1 Form</title>
+    <style type="text/css">
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'arial', serif;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      /* General HTML elements */
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+      }
+      hr {
+        border: 1px solid #000000;
+      }
+
+      /* Top Banner */
+      #banner {
+        width: 99%;
+        padding: 5px;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      /* Layout and scaling */
+      .w33 {
+        width: 32%;
+        margin-right: 1%;
+      }
+      .w40 {
+        width: 39.5%;
+      }
+      .w60 {
+        width: 59.5%;
+      }
+      .noWrap {
+        white-space: nowrap;
+      }
+      .row {
+        width: 100%;
+        clear: both;
+      }
+      .rowPad {
+        padding: 6px 0;
+      }
+      .left {
+        float: left;
+        text-align: left;
+      }
+      .right {
+        float: right;
+        text-align: right;
+      }
+      .SR1 {
+        display: inline-block;
+        margin-left: 40px;
+      }
+      .topLeftBoxLabel {
+        width: 100px;
+        float: left;
+      }
+      .vAlignBottom {
+        vertical-align: bottom;
+      }
+
+      /* Table */
+      table {
+        table-layout: auto;
+        width: 100%;
+      }
+      td {
+        vertical-align: top;
+        margin: 0px;
+        padding: 0px;
+      }
+      caption {
+        display:none;
+      }
+      th {
+        font-weight: normal;
+        text-align: left;
+      }
+
+      /* Labelling */
+      .label {
+        margin-right: 10px;
+        margin-bottom: 0px;
+      }
+      .labelLeftPad {
+        padding-left: 10px;
+      }
+      .labelRightPad {
+        padding-right: 10px;
+      }
+
+      /* Boxed text */
+      .boxed {
+        border: 1px solid #777;
+        padding-left: 4px;
+        padding-right: 4px;
+        text-align: left;
+        height: 20px;
+      }
+      .boxDeep {
+        min-height: 60px;
+        overflow: none;
+      }
+      .boxMin {
+        min-width: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      Doctor's Report for Disability Living Allowance, Attendance Allowance, Personal Independence Payment,
+      Employment and Support Allowance, Incapacity Benefit or Universal Credit to accompany your patient's
+      claim under Special Rules
+    </div>
+    <!-- Part 1 and form identifier-->
+    <div class="row rowPad">
+      <div class="w40 left"><h1>Part 1 - Patient's details</h1></div>
+      <div class="w60 right">
+        <h1>This is not a claim form <span class="SR1">SR1</span></h1>
+      </div>
+    </div>
+    <div class="row rowPad">
+      <div class="w40 left">
+        <table>
+          <caption>Patient's details</caption>
+          <tr>
+            <th scope="col" class="noWrap"><span class="label">Surname</span></th>
+            <th scope="col" class="boxed">${surname}</th>
+          </tr>
+          <tr>
+            <td class="noWrap"><span class="label">Other names</span></td>
+            <td class="boxed">${otherNames}</td>
+          </tr>
+          <tr>
+            <td class="noWrap"><span class="label">Date of birth</span></td>
+            <td class="boxed">${dateOfBirth}</td>
+          </tr>
+          <tr>
+            <td class="noWrap"><span class="label">NI No.</span></td>
+            <td class="boxed">${niNumber}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="w60 right">
+        <table>
+          <caption>Address</caption>
+          <tr>
+            <th scope="col"><span class="label right">Address</span></th>
+            <th scope="col" colspan="2" class="boxed">${address1}</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2" class="boxed">${address2}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="2" class="boxed">${address3}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><span class="label">Postcode</span></td>
+            <td class="boxed">${postcode}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row rowPad">
+      <hr />
+      <h1>Part 2 - Condition</h1>
+      <table>
+        <caption>Condition</caption>
+        <tr>
+          <th scope="col" class="w33">What is the diagnosis?</th>
+          <th scope="col" rowspan="9"></th>
+          <th scope="col" class="w33">Other relevant diagnosis</th>
+          <th scope="col" rowspan="9"></th>
+          <th scope="col" rowspan="2" colspan="4">Is the patient aware of their condition and/or prognosis?</th>
+        </tr>
+        <tr>
+          <!-- What is the diagnosis (content cell) -->
+          <td class="boxed" rowspan="6">
+            ${diagnosis}
+          </td>
+          <!-- Other relevant diagnosis (content cell) -->
+          <td class="boxed" rowspan="8">
+            ${otherDiagnosis}
+          </td>
+        </tr>
+        <tr>
+          <td>Yes</td>
+          <!-- X for Patient aware of condition (content cell) -->
+          <td class="boxed">${patientawarenessDiagnosisYes}</td>
+          <td><span class="label labelLeftPad">No</span></td>
+          <!-- X for Patient not aware of condition (content cell) -->
+          <td class="boxed">${patientawareDiagnosisNo}</td>
+        </tr>
+        <tr>
+          <td colspan="4">Is the patient aware of their prognosis?</td>
+        </tr>
+        <tr>
+          <td>Yes</td>
+          <!-- X for Patient complete form (content cell) -->
+          <td class="boxed boxMin">${patientawarePrognosisYes}</td>
+          <td><span class="label labelLeftPad">No</span></td>
+          <!-- X for Patient not aware of condition (content cell) -->
+          <td class="boxed">${patientawarePrognosisNo}</td>
+        </tr>
+        
+          <td></td>
+        </tr>
+        <tr>
+          
+        </tr>
+        <td>Date of diagnosis</td>
+      </tr>
+      <tr>
+        <!-- Date of diagnosis (content cell) -->
+        <td class="boxed">${diagnosisDate}</td>
+      </tr>
+        <td>Date from which the patient is thought to meet the Special Rules</td>
+      </tr>
+      <tr>
+        <!-- Special rules date (content cell) -->
+        <td class="boxed">${specialDate}</td>
+      </tr>
+      </table>
+    </div>
+    <div class="row">
+      <hr />
+      <h1>Part 3 - Clinical features</h1>
+      <p>
+        For example, rate of progression, recurrence, staging, tumour markers, bulbar involvement, end-stage disease.
+      </p>
+      <!-- Clinical features (content cell) -->
+      <table>
+        <caption>Clinical features</caption>
+        <tr>
+          <th scope="col" class="boxed">
+            <p class="boxDeep">
+              ${clinicalFeatures}
+            </p>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <div class="row">
+      <hr />
+      <h1>Part 4 - Treatment</h1>
+      <table>
+        <caption>Treatment</caption>
+        <tr>
+          <th scope="col" class="labelRightPad">
+            Tell us about the purpose of any treatment and the response. For example: treatment may be ongoing, palliative, symptom control or psychosocial.
+          </th>
+        </tr>
+        <tr>
+          <!-- Past or current treatment (content cell) -->
+          <td class="boxed">
+            <p class="boxDeep">
+              ${treatment}
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="row">
+      <hr />
+      <h1>Part 5 - Declaration</h1>
+      <p>
+        The person named above is my patient. This is a full report of their condition and treatment. I have read and understood the notes attached to this form and I am satisfied that the form is appropriate. I am the patient’s:
+      </p>
+      <table>
+        <caption>Declaration</caption>
+        <tr>
+          <!-- X for General Practitioner cell -->
+          <th scope="col" class="boxed">${declarationGp}</th>
+          <th scope="col"><span class="label labelLeftPad">General Practitioner</span></th>
+          <th scope="col"></th>
+          <th scope="col" rowspan="9"></th>
+          <th scope="col"></th>
+        </tr>
+        <tr>
+          <!-- X for GMC registered consultant cell -->
+          <td class="boxed">${declarationGmc}</td>
+          <td><span class="label labelLeftPad">GMC registered consultant</span></td>
+          <td></td>
+          <td class="w40 vAlignBottom">Address</td>
+        </tr>
+        <tr>
+          <!-- X for Specialist nurse cell -->
+          <td class="boxed">${declarationNurse}</td>
+          <td><span class="label labelLeftPad">Specialist nurse</span></td>
+          <td></td>
+         <!-- Address (content cell) -->
+          <td rowspan="4" class="boxed">${declarerAddress}</td>
+        </tr>
+        <tr>
+          <td class="boxed">${declarationOther}</td>
+          <td><span class="label labelLeftPad">Other, please specify</span></td>
+          <!-- Other please specify (content cell) -->
+          <td class="boxed">${declarationAdditionalDetail}</td>
+         
+        </tr>
+        <tr>
+          <td colspan="3">Signature</td>
+        </tr>
+        <tr>
+          <!-- Signature (content cell) -->
+          <td colspan="3" class="boxed">${signature}</td>
+        </tr>
+        <tr>
+          <td colspan="3">Your name</td>
+          <td class="vAlignBottom">Postcode</td>
+        </tr>
+        <tr>
+          <!-- Your name (content cell) -->
+          <td colspan="3" class="boxed">${declarerName}</td>
+          <td class="boxed">${declarerPostcode}</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="vAlignBottom">Phone number</td>
+          <!-- Date (content cell) -->
+          <td class="vAlignBottom">Date</td>
+        </tr>
+        <tr>
+          <!-- Phone number (content cell) -->
+          <td colspan="3" class="boxed">${declarerPhoneNumber}</td>
+          <td></td>
+          <td class="boxed">${declarationDate}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

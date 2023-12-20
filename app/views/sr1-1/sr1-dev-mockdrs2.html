@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>DRS PDF</title>
+    <style type="text/css">
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'arial', serif;
+        font-size: 12px;
+      }
+      caption {
+        display:none
+      }
+
+      /* General HTML elements */
+      h1 {
+        font-size: 18px;
+        padding: 0px;
+        margin-bottom: 5px;
+      }
+      hr {
+        margin-top:10px;
+        border: 1px solid #000000;
+      }
+
+      /* Table */
+      table {
+        table-layout: auto;
+      }
+      th {
+        text-align:left;
+        font-weight: normal;
+      }
+      td {
+        vertical-align: top;
+        margin: 0px;
+        padding-top: 2px;
+        padding-right: 10px;
+      }
+      .pTop10 {
+        padding-top: 10px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <caption>DS1500</caption>
+      <tr>
+        <th scope="col">Doctor's Report for Disability Living Allowance, Attendance Allowance, Personal Independence Payment,
+Employment and SupportAllowance, Incapacity Benefit or Universal Credit to accompany your patient's
+claim under Special Rules. THIS IS NOT A CLAIMFORM DS1500</th>
+      </tr>
+    </table>
+    <hr />
+    <!-- Part 1 - Patient Details -->
+    <table>
+      <caption>Part 1 - Patient Details</caption>
+      <tr>
+        <th scope="col" colspan="2"><h1>Part 1 - Patient Details</h1></th>
+      </tr>
+      <tr>
+        <td>Full Name</td>
+        <td>${otherNames} ${surname}</td>
+      </tr>
+      <tr>
+        <td>National Insurance Number</td>
+        <td>${niNumber}</td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td>${dateOfBirth}</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>${address1}<br />${address2}<br />${address3}</td>
+      </tr>
+      <tr>
+        <td>Post Code</td>
+        <td>${postcode}</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- Part 2 - Condition -->
+    <table>
+      <caption>Part 2 - Condition</caption>
+      <tr>
+        <th scope="col" colspan="2"><h1>Part 2 - Condition</h1></th>
+      </tr>
+      <tr>
+        <td>What is the diagnosis?</td>
+        <td>${diagnosis}</td>
+      </tr>
+      <tr>
+        <td>Date of diagnosis</td>
+        <td>${diagnosisDate}</td>
+      </tr>
+      <tr>
+        <td>Date from which the patient is thought to meet the Special Rules</td>
+        <td>${specialDate}</td>
+      </tr>
+      <tr>
+        <td>Other relevant diagnosis</td>
+        <td>${otherDiagnosis}</td>
+      </tr>
+      <tr>
+        <td>Is the patient aware of their diagnosis?</td>
+        <td>${patientawareDiagnosis}</td>
+      </tr>
+      <tr>
+        <td>Is the patient aware of their prognosis?</td>
+        <td>${patientawarePrognosis}</td>
+      </tr>
+    </table>
+
+    <hr />
+    <!-- Part 3 - Clinical features -->
+    <table>
+      <caption>Part 3 - Clinical features</caption>
+      <tr>
+        <th scope="col" colspan="2"><h1>Part 3 - Clinical features</h1></th>
+      </tr>
+      <tr>
+        <td>For example, rate of progression, recurrence, staging, tumour markers, bulbar involvement, end-stage disease.</td>
+      </tr>
+      <tr>
+        <td>${clinicalFeatures}</td>
+      </tr>
+    </table>
+
+<hr />
+    <!-- Part 4 - Treatment -->
+    <table>
+      <caption>Part 4 - Treatment</caption>
+      <tr>
+        <th scope="col" colspan="2"><h1>Part 4 - Treatment</h1></th>
+      </tr>
+      <tr>
+        <td>Tell us about the purpose of any treatment and the response. For example: treatment may be ongoing, palliative, symptom control or psychosocial.</td>
+      </tr>
+      <tr>
+        <td>${treatment}</td>
+      </tr>
+    </table>
+
+     <hr />
+
+    <!-- Part 5 - Declaration -->
+    <table>
+      <caption>Part 5 - Declaration</caption>
+      <tr>
+        <th scope="col" colspan="2"><h1>Part 5 - Declaration</h1></th>
+      </tr>
+      <tr>
+        <td colspan="2">The person named above is my patient. This is a full report of their condition and treatment. I have read and understood the notes attached to this form and I am satisfied that the form is appropriate. I am the patient’s:</td>
+      </tr>
+      <tr>
+        <td colspan="2">${declaration} ${other} ${declarationAdditionalDetail}</td>
+      </tr>
+      <tr>
+        <td class="pTop10">Your Name</td>
+        <td class="pTop10">${declarerName}</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>${declarerAddress}</td>
+      </tr>
+      <tr>
+        <td>Postcode</td>
+        <td>${declarerPostcode}</td>
+      </tr>
+      <tr>
+        <td>Phone Number</td>
+        <td>${declarerPhoneNumber}</td>
+      </tr>
+      <tr>
+        <td>Date form completed</td>
+        <td>${declarationDate}</td>
+      </tr>
+      <tr>
+        <td>Signature</td>
+        <td>${signature}</td>
+      </tr>
+    </table>
+  </body>
+</html>

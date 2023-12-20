@@ -1,0 +1,86 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Sorry, we cannot authorise you to use this service - Send an SR1 - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+<header class="govuk-header " role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="#" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <!--[if gt IE 8]><!-->
+         
+          <!--<![endif]-->
+          <!--[if IE 8]>
+          <img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+          <![endif]-->
+          <span class="govuk-header__logotype-text">
+           Send an SR1
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+</header>
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="dwp.digitalds1500@dwp.gov.uk">feedback</a> will help us to improve it.'
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Sorry, we cannot authorise you to use this service - error 403
+      </h1>
+
+   
+
+      <p>Only specific job roles are authorised to complete an SR1 form.</p>
+
+      <p>These are:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>GP</li>
+  <li>hospital consultant</li>
+  <li>specialty doctor</li>
+  <li>hospice doctor</li>
+  <li>senior specialist nurse (such as a clinical nurse specialist, advanced nurse practitioner or similar)</li>
+
+</ul>
+<p>Your job role is checked against the job role on your NHS smartcard. If you should have access to this service, make sure your smartcard is correct. If it’s wrong, your IT support team will be able to help.</p>
+<p>If you do not have an account to log incidents with the <a href="https://www.nhscfhservicedesk.nhs.uk%5D,">NHS National Service Desk</a> call 0300 303 5035.</p>
+
+<h2 class="govuk-heading-m">What you can do if the problem continues</h2>
+
+<p>You can complete PDF versions of the SR1 and the fee claim forms online. They do not need to be signed, but you’ll need to return them to us from a secure email address. Any email that does not come from a secure email address will be automatically deleted.</p>
+
+<p>Secure email addresses end in:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li><kbd>@nhs.net</kbd></li>
+  <li><kbd>@nhs.uk</kbd></li>
+  <li><kbd>@nhs.scot</kbd></li>
+  <li><kbd>@nhs.wales.uk</kbd></li>
+  <li><kbd>@gov.uk</kbd></li> 
+  </ul>
+
+<p>Send the request for a PDF version of the SR1 form, and fee claim form if needed, from your secure email address to <a href="#">form.e-sr1@dwp.gov.uk.</a></p>
+<p>Please include your:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>surgery /hospital /postal address</li>
+  <li>phone number</li>
+
+ 
+</ul>
+
+<p>Do not encrypt any part of this email.</p>
+
+{% endblock %}

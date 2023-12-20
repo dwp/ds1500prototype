@@ -1,0 +1,343 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Report a terminally ill patient prototype versions</h1>
+
+        <h2 class="govuk-heading-m">Please find the DS1500 & SR1 prototype versions currently under test and refinement.</h2>
+
+
+
+      <p> The Baseline Prototypes were initial developed leveraging the questions from the <a href="https://temp-ds1500.herokuapp.com/index">previous DS1500 Build</a>.</p>
+
+      <p> For any questions, please contact <a href="mailto:Kulan.Gunawardena@engineering.digital.dwp.gov.uk">Kulan Gunawardena</a>.
+      </p>
+
+      <!DOCTYPE html>
+      <style>
+                              .falcon {max-width: 15%}
+                              .falcon {max-height: auto}
+        </style>
+      <center>
+        <img src="/public/images/falcon.png" class="falcon" alt="team falcon logo">
+      </center>
+      </html>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+         Prototypes for user testing (July 2022)
+        </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p>This section is for the new SR1 prototypes.</b></p>
+
+            <div class="govuk-inset-text">SR1 prototype (July 26 2022)</div>
+            <form class="form" action="/sr1-1/start" method="post">
+              <button class="govuk-button" data-module="govuk-button">SR1 journey</button></form>
+
+            <div class="govuk-inset-text"> Prototype containing eligibility questions. </div>
+        <form class="form" action="/v1/2final-start" method="post">
+          <button class="govuk-button" data-module="govuk-button">Prototype 1</button></form>
+          <div class="govuk-inset-text"> New SR1 form. </div>
+          <form class="form" action="/sr1/2final-start" method="post">
+            <button class="govuk-button" data-module="govuk-button">SR1/ DS1500 split</button></form>
+
+            
+
+            </div>
+            </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Prototype for Developers
+        </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p>This section is for the Development Team. Please note that various elements of the Prototype will be <b>subject to change</b> as per User Testing. The Design Team will coordinate changes with the BA Team.</p>
+
+            <h2 class="govuk-heading-m">Sprint 31</h2>
+
+            <form class="form" action="s23-start" method="post">
+              <div class="govuk-inset-text"><b>Sprint 2 Prototype</b> is designed for the Development Team. It incorporates what is currently in the Dev environment with Sprint 31's tickets: <b><a href="https://dwpdigital.atlassian.net/browse/HTF-1094">HTF-1094 - Update talk to an advisor section on all pages</a><a href="https://dwpdigital.atlassian.net/browse/HTF-1090">HTF-1090 - Separation of download and confirmation page</a> </b></div>
+              <button class="govuk-button" data-module="govuk-button"><b>Sprint Prototype</b></button></form>
+
+            <div class="govuk-!-padding-bottom-2"></div>
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Developer environment prototype
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+                <form class="form" action="1form-start-catalogue" method="post">
+                  <div class="govuk-inset-text"><b>Developer environment Prototype</b> is designed to replicate what the current dev environment looks like.</b> Please develop the look and feel of the prototype and <b>do not replicate the code</b>.</div>
+                  <button class="govuk-button" data-module="govuk-button">Dev environment Prototype</button></form>              </div>
+            </details>
+
+            <div class="govuk-!-padding-bottom-1"></div>
+
+          </div>
+        </div>
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Feedback Form for Developers
+        </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p>This section is for the Development Team. It shows a GDS-refreshed version of the original Feedback From. It is to be URL link on the confirmation page when users click <b>What did you think of this service? (takes 30 seconds)</b></p>
+
+            <form class="form" action="1form-all-feedback" method="post">
+              <div class="govuk-inset-text">The <b>Feedback Form</b> is designed for the Development Team. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.</div>
+              <button class="govuk-button" data-module="govuk-button">Feedback Form Prototype</button></form>
+
+            <form class="form" action="1form-all-feedback-error" method="post">
+              <div class="govuk-inset-text">This page incorporates an error within the <b>Feedback Form for when a user does not select a rating</b> </div>
+              <button class="govuk-button govuk-button--warning" data-module="govuk-button">Feedback Form Error Message</button></form>
+
+          </div>
+        </div>
+
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Accessibility Statement for Developers
+        </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p>This section is for the Development Team. It shows a GDS and content-refreshed version of a legally-required Accessibility Statement. Users access this statement when they click <b>'Accessibility Statement'</b> in the footer of each page.</p>
+
+            <!DOCTYPE html>
+            <style>
+                              .accessibility-statement {max-width: 100%}
+                              .accessibility-statement {max-height: auto}
+        </style>
+            <center>
+              <img src="/public/images/accessibility-statement.png" class="accessibility-statement" alt="accessibility statement">
+            </center>
+            </html>
+
+            <form class="form" action="1form-all-accessibility-statement" method="post">
+              <div class="govuk-inset-text">The <b>Accessibility Statement</b> is designed for the Development Team. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.</div>
+              <button class="govuk-button" data-module="govuk-button">Accessibility Statement Prototype</button></form>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Error Messages for Developers
+        </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <p>This section is for the Development Team. Please note that various elements of the Prototype will be <b>subject to change</b> as per User Testing. The Design Team will coordinate changes with the BA Team.</p>
+
+            <form class="form" action="1form-timeout-error" method="post">
+              <div class="govuk-inset-text"><p><b>Timeout Error Prototype</b> is designed for the Development Team to represent the <b>service timing out after 30 minutes of inactivity</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b></p>
+                <p>Prototype also incorporates content change on session timeout page. As per Jira ticket: <a href="https://dwpdigital.atlassian.net/browse/HTF-760">HTF-760</a> <b> Content change: from 'Return to the Start page' to 'Return to Submit a DS1500'.</b></p></div>
+              <button class="govuk-button govuk-button--warning" data-module="govuk-button">Timeout Error Prototype</button></form>
+
+            <form class="form" action="1form-503-error" method="post">
+              <div class="govuk-inset-text"><b>503 Error Prototype</b> is designed for the Development Team to represent the 503 Error page: <b>'Shutter error'</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.</div>
+              <button class="govuk-button govuk-button--warning" data-module="govuk-button">503 Error Prototype</button></form>
+
+            <form class="form" action="1form-403-error" method="post">
+              <div class="govuk-inset-text"><b>403 Error Prototype</b> is designed for the Development Team to represent the 403 Error page: <b>'Unauthorised user attempts to submit DS1500'</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.</div>
+              <button class="govuk-button govuk-button--warning" data-module="govuk-button">403 Error Prototype</button></form>
+
+            <form class="form" action="1form-401-error" method="post">
+              <div class="govuk-inset-text"><b>401 Error Prototype</b> is designed for the Development Team to represent the 401 Error page: <b>'Spine portal unable to reach DS1500 service'</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.</div>
+              <button class="govuk-button govuk-button--warning" data-module="govuk-button">401 Error Prototype</button></form>
+
+            <form class="form" action="1form-500-error" method="post">
+              <div class="govuk-inset-text"><b>500 Error Prototype</b> is designed for the Development Team to represent the 500 Error page: <b>'	DS1500 service unavailable'</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.</div>
+              <button class="govuk-button govuk-button--warning" data-module="govuk-button">500 Error Prototype</button></form>
+
+            <form class="form" action="1form-all-feedback-error" method="post">
+              <div class="govuk-inset-text">This page incorporates an error within the <b>Feedback Form for when a user does not select a rating</b> </div>
+              <button class="govuk-button govuk-button--warning" data-module="govuk-button">Feedback Form Error Message</button></form>
+
+          </div>
+        </div>
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          (Archived) Ds1500 Prototypes for Design Team for User Testing
+        </span>
+            </h2>
+          </div>
+
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+
+            <p>This section is for the Design Team to test new features with users. This section is <b>not</b> for the Development Team. The Development Team should refer to <b>Prototype for Developers</b> section.</p>
+
+            <form class="form" action="start" method="post">
+              <div class="govuk-inset-text"> Prototype v1 is designed with <b>several questions per page</b></div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v1</button></form>
+
+            <form class="form" action="1Q-start" method="post">
+              <div class="govuk-inset-text"> Prototype v2 is designed with <b>1 question per page</b></div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v2</button></form>
+
+            <form class="form" action="1form-start" method="post">
+              <div class="govuk-inset-text"> Prototype v3 is designed with <b>all questions on one single page.</b> Please note that this prototype does not have <b>check your answers functionality</b> due to fear of duplication</div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v3</button></form>
+
+            <form class="form" action="1form-start-v2" method="post">
+              <div class="govuk-inset-text"> Prototype v4 is designed with <b>all questions on one single page.</b> Since a <b>check your answers</b> functionality is not recommended to avoid duplication, Prototype v4 tests a <b>YES/NO Radio component</b> at the end of the form stating: <i>have you checked all the information you have entered for errors?</i></div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v4</button></form>
+
+            <form class="form" action="1form-start-v5" method="post">
+              <div class="govuk-inset-text"> Prototype v5 is designed with <b>all questions on one single page.</b> Further user research has indicated that users may actually <b>want</b> a <b>check your answers</b> page as it is a chance to "preview" the application before its submitted. Therefore this prototype contains "check your answers" functionality</div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v5</button></form>
+
+            <form class="form" action="1form-start-v6" method="post">
+              <div class="govuk-inset-text"> Prototype v6 experiments with some new minor designs and components to aid the flow of the service, with the aim of <b>A/B Testing</b> them.</div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v6</button></form>
+
+            <form class="form" action="1form-start-v7" method="post">
+              <div class="govuk-inset-text"> Prototype v7 experiments with builds from a <b>team workshop</b> on Friday 8th Jan.</div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v7</button></form>
+
+            <form class="form" action="1form-start-v8" method="post">
+              <div class="govuk-inset-text"> Prototype v8 is implemented with builds from a series of <b>UR sessions with medical professionals</b> starting 2nd February 2021.</div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v8</button></form>
+
+            <form class="form" action="1form-start-v9" method="post">
+              <div class="govuk-inset-text"> Prototype v9 is implemented with builds from a series of <b>UR sessions</b> and <b>accessibility sessions with medical professionals</b> starting in late February 2021.</div>
+              <button class="govuk-button" data-module="govuk-button">Prototype v9</button></form>
+
+
+              <div class="govuk-inset-text"> Prototypes v10a, v10b and v10c test having DS1500 and Claim Fee Form imagery on the confirmation page. <b>v10a (imagery)</b>, <b>v10b (no imagery)</b> and <b>v10c (no imagery, with green buttons)</b>.</div>
+            <form class="form" action="1form-start-v10a" method="post">
+            <button class="govuk-button" data-module="govuk-button">Prototype v10a</button></form>
+            <form class="form" action="1form-start-v10b" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v10b</button></form>
+            <form class="form" action="1form-start-v10c" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v10c</button></form>
+
+            <div class="govuk-inset-text"> Prototypes v11a, v11b and v11c focus on testing the security warning messages at the top of the pages. <b>v11a contains the messages (warning component), v11b removes the messages and v11c tests the <a href="https://design-system.service.gov.uk/components/notification-banner/">Notification Banner</a> component on the confirmation page.</b></div>
+            <form class="form" action="1form-start-v11a" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v11a</button></form>
+            <form class="form" action="1form-start-v11b" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v11b</button></form>
+            <form class="form" action="1form-start-v11c" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v11c</button></form>
+
+            <div class="govuk-inset-text"> Prototype 12 focuses re-introducing the <b>one-question per page format</b>. It copies Prototype v11b (but in a one-question per page format).</div>
+            <form class="form" action="v12-1" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v12</button></form>
+
+            <div class="govuk-inset-text"> It was brought to our attention that the <a href="https://design-system.service.gov.uk/components/accordion/"> GDS experimental Accordion component </a>, despite testing very well, has an accessibility issue, therefore may need temporary removal from the service. Therefore the following prototypes look to explore at alternative methods of displaying the content that was meant for the accordion. Currently as it stands, the accordion's section headings can be mistaken for links, but are treated as buttons. This fails WCAG 2.1 success criterion 1.3.1 Info and Relationships. <b>Prototype v13a</b> implements Contents functionality similar to the <a href="https://www.gov.uk/guidance/covid-19-coronavirus-restrictions-what-you-can-and-cannot-do">(COVID-19) Coronavirus restrictions: what you can and cannot do</a> guidance page. <b>Prototype 13b</b> incorporates the Content in a separate guidance page.       <div class="govuk-!-padding-bottom-5"></div>     <p>In addition, both prototypes have incorporated a <b>'Specialist Nurse' Radio button</b> in Details section of the form as they are a high proportion of users of the DS1500 form. Data analysis on this Radio button is pending.</p> 
+            
+            </div>
+            <form class="form" action="v13a-start" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v13a</button></form>
+            <form class="form" action="v13b-start" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype v13b</button></form>
+
+              <div class="govuk-inset-text"> Prototype 14 introduces the accessbile link for additional guidance on the start page. It also tests splitting out the confirmation screen into separate screens, download and confirmation. </div>
+              <form class="form" action="v14-start" method="post">
+                <button class="govuk-button" data-module="govuk-button">Prototype v14</button></form>
+
+              
+
+          </div>
+
+
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+           (Archvied) SR1 / DS1500 Split Prototypes
+          </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <p>This section is for the new SR1 and DS1500 screens for user testing commencing on the 28th of Feb.</b></p>
+
+              <div class="govuk-inset-text"> Prototype containing eligibility questions. </div>
+          <form class="form" action="/sr1/1sr1-ratip" method="post">
+            <button class="govuk-button" data-module="govuk-button">Prototype 1</button></form>
+
+            <div class="govuk-inset-text"> Simplified journey - no eligibility questions. </div>
+            <form class="form" action="/sr1/2sr1-ratip" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype 2</button></form>
+
+              <div class="govuk-inset-text"> Simplified journey - no eligibility questions + banners.</div>
+              
+            <form class="form" action="/sr1/3sr1-ratip" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype 3</button></form>
+
+              <div class="govuk-inset-text"> Simplified journey 2 - focus on DS1500.</div>
+
+            <form class="form" action="/sr1/4sr1-ratip" method="post">
+              <button class="govuk-button" data-module="govuk-button">Prototype 4</button></form>
+            
+              <h3 class="govuk-heading-m" >Final prototype options</h3>
+
+           
+
+              <form class="form" action="/sr1/1final-start" method="post">
+                <button class="govuk-button" data-module="govuk-button">Option 1</button></form>
+
+                <div class="govuk-inset-text">Option 2 is our final prototype for the SR1/ DS1500 split.</div>
+
+                <form class="form" action="/sr1/2final-start" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Option 2</button></form>
+              
+  
+              </div>
+              </div>
+
+         
+             
+      </div>
+
+          </div>
+          
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          'Prototypes for Design Team for User Testing' are not for production!
+        </strong>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <title>SR1 Fee</title>
+    <style type="text/css">
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'arial', serif;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: bold;
+      }
+      caption {
+        display:none
+      }
+
+      /* General HTML elements */
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+      h1 {
+        font-size: 18px;
+        padding: 0px;
+        margin-bottom: 5px;
+      }
+      hr {
+        border: 1px solid #000000;
+      }
+
+      /* Boxed text */
+      .boxed {
+        border: 1px solid #777;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-align: left;
+        height: 20px;
+        font-weight: bold;
+      }
+      .boxDeep {
+        min-height: 60px;
+      }
+      .guideText {
+        font-size: 12px;
+        font-weight: normal;
+      }
+
+      /* Layout and scaling */
+      .w12 {
+        width: 12.5%;
+      }
+      .w30 {
+        width: 30%;
+      }
+      .w40 {
+        width: 42.5%;
+      }
+      .w50 {
+        width: 49%;
+      }
+      .w56 {
+        width: 56.5%;
+      }
+      .noWrap {
+        white-space: nowrap;
+      }
+      .row {
+        width: 100%;
+        clear: both;
+      }
+      .rowPad {
+        padding: 6px 0;
+      }
+      /* .left {
+        float: left;
+        text-align: left;
+      } */
+      .right {
+        float: right;
+        text-align: right;
+      }
+
+      /* Table */
+      table {
+        table-layout: auto;
+        width: 100%;
+      }
+      table.auto {
+        width: auto;
+      }
+      th {
+        text-align:left;
+        font-weight: normal;
+      }
+      td {
+        vertical-align: middle;
+        margin: 0px;
+        padding: 2px 0px;
+      }
+      .centered {
+        min-width: 20px;
+        min-height: 20px;
+      }
+      .padRight {
+        padding-right: 5px;
+      }
+      .noVerticalPad {
+        padding: 0px;
+      }
+
+      /* Page Break */
+      .break {
+        page-break-before: always;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .submissionAddress {
+        width: 380px;
+        white-space: pre;
+      }
+
+      .contactNumber {
+        white-space: pre;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Your Patient -->
+    <div class="row">
+      <table>
+        <caption>Your Practice</caption>
+          <tr>
+            <th scope="col"><h1>Your Patient</h1></th>
+            <th scope="col" class="SR1"><span class="boxed right">SR1 - Fee Form</span></th>
+          </tr>
+        <tr>
+          <td class="w40">Surname</td>
+          <td class="w56 boxed">${surname}</td>
+        </tr>
+        <tr>
+          <td>Other Names</td>
+          <td class="boxed">${otherNames}</td>
+        </tr>
+        <tr>
+          <td>National Insurance Number</td>
+          <td class="boxed">${nINumber}</td>
+        </tr>
+        <tr>
+          <td>Date of Birth</td>
+          <td class="boxed">${dateOfBirth}</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td class="boxed">${address}</td>
+        </tr>
+        <tr>
+          <td>Postcode</td>
+          <td class="boxed">${postcode}</td>
+        </tr>
+      </table>
+
+      <table>
+        <caption>Your Practice</caption>
+          <tr>
+            <th scope="col" class="w30"><h1>Your Practice</h1></th>
+            <th scope="col" class="w12"></th>
+            <th scope="col" class="w56"></th>
+          </tr>
+        <tr>
+          <td>Contact Name</td>
+          <td colspan="2">
+              <div class="right">
+                <table class="auto">
+                  <caption>Practice Contact Name</caption>
+                    <tr>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                      <th scope="col" class="boxed centered"></th>
+                    </tr>
+                </table>
+              </div>
+            </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <span class="guideText">This is the person we'll contact if there is a problem</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Phone Number</td>          
+          <td colspan="2">
+            <div class="right">
+              <table class="auto">
+                <caption>Practice phone number</caption>
+                  <tr>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                  </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Address</td>
+          <td class="boxed">${declarerAddress}</td>
+        </tr>
+        <tr>
+          <td colspan="2">General Medical Council Number</td>
+          <td class="boxed">${gmcNumber}</td>
+        </tr>
+        <tr>
+          <td colspan="2">VAT registration number</td>
+          <td>
+            <div class="right">
+              <table class="auto">
+                <caption>VAT registration number</caption>
+                  <tr>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                  </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <span class="guideText">If you're not registered for VAT just leave this blank</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Your title</td>
+          <td class="boxed">${title}</td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <span class="guideText">For example, Dr, Mr, Ms, Mrs, Miss or other.</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">${declarerName} - payee reference number</td>
+          <td>
+            <div class="right">
+              <table class="auto">
+                <caption>Payee reference number</caption>
+                  <tr>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                  </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <span class="guideText">
+              This was sent to you when you made your first claim.
+              <br />If you do not know your reference number call <strong>0845 241 5352</strong> and select Option 2.<br />If
+              you have never made a claim before leave this payee reference number blank and make sure you fill
+              in your bank details below.
+              <br /><br />
+                If you have made a claim before and filled in your payee reference number just leave the BANK
+                ACCOUNT details blank - we will already have these details.
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <table>
+        <caption>Bank Details</caption>
+        <tr>
+          <th scope="col" colspan="2"><h1>Bank Details</h1></th>
+        </tr>
+        <tr>
+          <th scope="col" colspan="3" class="guideText"><p>If this is your first claim or you have changed bank account details since you last claimed a fee please complete your bank account details in full.</p></th>
+        </tr>
+        <tr>
+          <td class="w40">Name of bank or building society</td>
+          <td class="w56 boxed"></td>
+        </tr>
+        <tr>
+          <td>Account name</td>
+          <td class="boxed"></td>
+        </tr>
+        <tr>
+          <td>Sort Code</td>
+          <td>
+            <div class="right">
+              <table class="auto">
+                <caption>Bank sort code</caption>
+                  <tr>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col">-</th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col">-</th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                  </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Account number</td>
+          <td class="boxed"></td>
+        </tr>
+        <tr>
+          <td>Roll number (building society only)</td>
+          <td class="boxed"></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td class="boxed"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <span class="guideText">
+              Provide the full address of where you wish the Remittance Advice slip to be sent.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Postcode</td>
+          <td class="boxed"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="break">
+      <h1>Sending this SR1 fee form:</h1>
+      <h3>Send electronically</h3>
+      <tr>
+          <span class="guideText">
+            Fill in this SR1 fee form electronically (for example with a PDF reader) and email it to form.e-SR1@dwp.gov.uk</span>
+        </td>
+      </tr>
+     
+   
+      <h3>Send by post</h3>
+      <tr>
+        <span class="guideText">
+          Print this SR1 fee form and post it to:</span>
+      </tr><br><br>
+      <tr>
+        <span class="guideText">
+          <strong>Personal Independence Payment (10)<br>Mail Handling Site A<br>Wolverhampton<br>WV98 1AE</strong></span>
+      </tr><br><br>
+      <hr />
+      <table>
+        <caption>For official DWP use only</caption>
+            <tr>
+              <th scope="col" class="padRight bold">D</th>
+              <th scope="col" colspan="2" class="bold">For official DWP use only</th>
+            </tr>
+        <tr>
+          <td class="padRight">D1</td>
+          <td colspan="2">Authorisation of fees</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <table class="auto">
+              <caption>The claim to be examined</caption>
+                <tr>
+                  <th scope="col" class="guideText">The claim can be examined. Payment of</th>
+                  <th scope="col" class="boxed centered">£</th>
+                  <th scope="col" class="boxed centered"></th>
+                  <th scope="col" class="boxed centered"></th>
+                  <th scope="col" class="boxed centered">.</th>
+                  <th scope="col" class="boxed centered"></th>
+                  <th scope="col" class="boxed centered"></th>
+                  <th scope="col" class="guideText">(net) is approved</th>
+                </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="padRight">D2</td>
+          <td colspan="2">Charge to:</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>BU</td>
+          <td>
+            <div class="right">
+              <table class="auto">
+                <caption>Payee reference number</caption>
+                  <tr>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                  </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cost Centre</td>
+          <td>
+            <div class="right">
+              <table class="auto">
+                <caption>Cost Centre</caption>
+                  <tr>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                  </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Account</td>
+          <td>
+            <div class="right">
+              <table class="auto">
+                <caption>Account</caption>
+                  <tr>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                    <th scope="col" class="boxed centered"></th>
+                  </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>D3</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <table>
+              <caption>D3</caption>
+                <tr>
+                  <!-- Signature -->
+                  <th scope="col" class="w50 bold">Signature</th>
+
+                  <!-- Date -->
+                  <th scope="col" class="w50 bold">Date</th>
+                </tr>
+              <tr>
+                <td class="boxed">
+                  <p class="boxDeep"></p>
+                </td>
+                <td class="boxed">
+                  <p class="boxDeep"></p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Authorisation Stamp -->
+                <td>Authorisation Stamp</td>
+
+                <!-- Office address stamp -->
+                <td>Office address stamp "examined" stamp</td>
+              </tr>
+              <tr>
+                <td class="boxed">
+                  <p class="boxDeep"></p>
+                </td>
+                <td class="boxed">
+                  <p class="boxDeep"></p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
