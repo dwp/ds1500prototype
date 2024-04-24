@@ -1,29 +1,10 @@
-{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-Sorry, we cannot log you in to the service - Send an SR1 - GOV.UK
+  401 error
 {% endblock %}
 
 {% block beforeContent %}
-<header class="govuk-header " role="banner" data-module="govuk-header">
-  <div class="govuk-header__container govuk-width-container">
-    <div class="govuk-header__logo">
-      <a href="#" class="govuk-header__link govuk-header__link--homepage">
-        <span class="govuk-header__logotype">
-          <!--[if gt IE 8]><!-->
-         
-          <!--<![endif]-->
-          <!--[if IE 8]>
-          <img src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
-          <![endif]-->
-          <span class="govuk-header__logotype-text">
-           Send an SR1
-          </span>
-        </span>
-      </a>
-    </div>
-  </div>
-</header>
 {% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
 {{ govukPhaseBanner({
   tag: {
@@ -34,6 +15,8 @@ Sorry, we cannot log you in to the service - Send an SR1 - GOV.UK
 {% endblock %}
 
 {% block content %}
+
+
 
 
 <div class="govuk-grid-row">
